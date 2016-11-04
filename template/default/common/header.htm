@@ -7,6 +7,7 @@
 	<!--{if helper_access::check_module('feed')}--><meta name="msapplication-task" content="name=$_G['setting']['navs'][4]['navname'];action-uri={echo !empty($_G['setting']['domain']['app']['home']) ? 'http://'.$_G['setting']['domain']['app']['home'] : $_G[siteurl].'home.php'};icon-uri={$_G[siteurl]}{IMGDIR}/home.ico" /><!--{/if}-->
 	<!--{if $_G['basescript'] == 'forum' && $_G['setting']['archiver']}-->
 		<link rel="archives" title="$_G['setting']['bbname']" href="{$_G[siteurl]}archiver/" />
+		<link rel="archives" title="" href="" />
 	<!--{/if}-->
 	<!--{if !empty($rsshead)}-->$rsshead<!--{/if}-->
 	<!--{if widthauto()}-->
@@ -25,10 +26,12 @@
 	<!--{/if}-->
 	<!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
 		<link rel="stylesheet" type="text/css" id="diy_common" href="{$_G['setting']['csspath']}{STYLEID}_css_diy.css?{VERHASH}" />
+		<link rel="stylesheet" type="text/css" id="diy_common" href="{$_G['setting']['csspath']}{STYLEID}_spacecp_credit_extra.css?{VERHASH}" />
 	<!--{/if}-->
 </head>
 
 <body id="nv_{$_G[basescript]}" class="pg_{CURMODULE}{if $_G['basescript'] === 'portal' && CURMODULE === 'list' && !empty($cat)} {$cat['bodycss']}{/if}" onkeydown="if(event.keyCode==27) return false;">
+{echo VERHASH}
 	<div id="append_parent"></div><div id="ajaxwaitid"></div>
 	<!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
 		<!--{template common/header_diy}-->

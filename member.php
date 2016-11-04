@@ -17,12 +17,12 @@ $discuz = C::app();
 
 $modarray = array('activate', 'emailverify', 'getpasswd',
 	'groupexpiry', 'logging', 'lostpasswd',
-	'register', 'regverify', 'switchstatus');
+	'register', 'regverify', 'switchstatus','viewblock');
 //声明操作类型数组
 
 $mod = !in_array($discuz->var['mod'], $modarray) && (!preg_match('/^\w+$/', $discuz->var['mod']) || !file_exists(DISCUZ_ROOT.'./source/module/member/member_'.$discuz->var['mod'].'.php')) ? 'register' : $discuz->var['mod'];
 
-define('CURMODULE', $mod);
+define('CURMODULE', $mod);//当前的动作变量
 
 $discuz->init();//初始化整个discuz应用，数据库，session操作初始化
 if($mod == 'register' && $discuz->var['mod'] != $_G['setting']['regname']) {

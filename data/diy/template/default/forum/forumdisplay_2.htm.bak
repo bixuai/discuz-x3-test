@@ -13,7 +13,7 @@
 
 <!--{ad/text/wp a_t}-->
 <div class="wp">
-	<!--[diy=diy1]--><div id="diy1" class="area"><div id="tabBJrmf4" class="frame-tab move-span cl"><div id="tabBJrmf4_title" class="tab-title title column cl" switchtype="click"><span class="titletext"><a href="api.php?mod=viewblock" target="_blank" style="color:rgb(0, 0, 0) !important;">获取所有板块信息</a></span></div><div id="tabBJrmf4_content" class="tb-c"></div><script type="text/javascript">initTab("tabBJrmf4","click");</script></div></div><!--[/diy]-->
+	<!--[diy=diy1]--><div id="diy1" class="area"><div id="tabBJrmf4" class="frame-tab move-span cl"><div id="tabBJrmf4_title" class="tab-title title column cl" switchtype="click"><span class="titletext"><a href="api.php?mod=vb" target="_blank" style="color:rgb(0, 0, 0) !important;">获取所有板块信息</a></span></div><div id="tabBJrmf4_content" class="tb-c"></div><script type="text/javascript">initTab("tabBJrmf4","click");</script></div></div><!--[/diy]-->
 </div>
 <div class="boardnav">
 	<div id="ct" class="wp cl{if $_G['forum']['allowside']} ct2{/if}"{if $leftside} style="margin-left:{$_G['leftsidewidth_mwidth']}px"{/if}>
