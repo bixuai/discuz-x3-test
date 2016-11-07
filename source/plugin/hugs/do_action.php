@@ -1,5 +1,5 @@
 <?php
-	// var_dump($_GET);die();
+	
 	// loadcache('plugin');
 	// global $_G;
 	define('APPTYPEID', 0);

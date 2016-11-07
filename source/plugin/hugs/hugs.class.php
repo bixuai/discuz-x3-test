@@ -32,7 +32,7 @@
 			// $user = C::t('#hugs#hugs')->getuser();
 			// $user = C::t('#hugs#hugs')->getcredits();
 			// return '积分总数'.$credits['credits'];die;
-			// var_dump($user);
+
 			// $insertId = C::t('')->insert($_GET[]);
 			return <<<EOF
 			<div style="width:200px;height:200px;text-align:center;line-height:50px;" class="score">
