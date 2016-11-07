@@ -1,5 +1,5 @@
 <?php
-	
+
 	// loadcache('plugin');
 	// global $_G;
 	define('APPTYPEID', 0);
@@ -70,3 +70,4 @@
 		// var_dump($resu);
 		echo json_encode($resu);
 	}
+		

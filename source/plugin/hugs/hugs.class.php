@@ -27,12 +27,12 @@
 
 	}
 
+
 	class plugin_hugs_home{
 		function spacecp_credit_extra(){
 			// $user = C::t('#hugs#hugs')->getuser();
 			// $user = C::t('#hugs#hugs')->getcredits();
 			// return '积分总数'.$credits['credits'];die;
-
 			// $insertId = C::t('')->insert($_GET[]);
 			return <<<EOF
 			<div style="width:200px;height:200px;text-align:center;line-height:50px;" class="score">
@@ -177,7 +177,11 @@
 EOF;
 			
 		}
-		
+	
+
+
+
+
 		// //显示积分跟奖品的钩子
 		// function spacecp_credit_extra1(){
 		// 	// // $totalcredits
